@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .checked {
+      color: orange;
+    }
+
+    .card {
+      /* max-width: 30em; */
+      flex-direction: row;
+      background-color: #696969;
+      border: 1px solid black;
+      /* box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); */
+      /* margin: 3em auto; */
+    }
+
+    .card.dark {
+      color: #fff;
+    }
+
+    .card.card.bg-light-subtle .card-title {
+      color: dimgrey;
+    }
+
+    .card img {
+      max-width: 25%;
+      margin: auto;
+      padding: 0.5em;
+      border-radius: 0.7em;
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .text-section {
+      max-width: 60%;
+    }
+
+    .cta-section {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: 250px;
+    }
+
+    .cta-section .btn {
+      padding: 0.3em 0.5em;
+      /* color: #696969; */
+    }
+
+
+    .card.bg-light-subtle {
+      background-color: #898989;
+      border-color: #898989;
+    }
+
+
+    @media screen and (max-width: 475px) {
+      .card {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Favourite Spot
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="TamilNadu.html">TamilNadu</a></li>
+              <li><a class="dropdown-item" href="Karnataka.html">Karnataka</a></li>
+              <li><a class="dropdown-item" href="Andhra.html">Andhra Pradesh</a></li>
+              <li><a class="dropdown-item" href="Delhi.html">Delhi</a></li>
+              <li><a class="dropdown-item" href="Kerala.html">Kerala</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Booking Form.html"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Accomodation.html">Accomodation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Directions.html">Directions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="User.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/520176041.webp?k=9aef1b18e914f52bebe6e9d01b1af91111ea822a0242fec6f8fe07e62b5984c2&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Le Kuruva isles Wayanad Jungle Resort
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Chekadi</small>
+          <p class="card-text">Located in Chekadi, within 7.5 km of Kuruvadweep and 24 km of Thirunelly Temple, Le
+            Kuruva isles wayanad jungle resort provides accommodation with a restaurant and as well as free private
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Exceptional<span class="badge rounded-pill text-bg-primary">9.8</span></h6>
+          <small>8000 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 15,500 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 2 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/514969497.webp?k=11e1ff7f8577fc3ec460d647c1615ff23e6a9241e2c255cde331ebbe31bc2de4&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Mount view by Farstay
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Wayanad</small>
+          <p class="card-text">Situated in Wayanad, within 1.7 km of Pookode Lake and 4.2 km of Lakkidi Viewpoint, Mount
+            view by farstay features accommodation with a terrace and free WiFi throughout the property as well as.....
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Exceptional<span class="badge rounded-pill text-bg-primary">9.6</span></h6>
+          <small>5640 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 2,250 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 3 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/514450361.webp?k=67e22fbadad157a1eacff43e47a0c40348118ce1104b7cc862c9db4cdc92a6a1&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Mystique Inn Wayanad
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Vythiri</small>
+          <p class="card-text">Set in Vythiri, within 2.1 km of Pookode Lake and 6 km of Lakkidi Viewpoint, Mystique Inn
+            Wayanad offers accommodation with a restaurant and free WiFi throughout the property as well as free...
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9.3</span></h6>
+          <small>600 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 960 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 4 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/508930964.webp?k=90a8c1a179379e04f0c0d2edcefbc0d926971540418ab16398fa2b286e395e3d&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">ARIAT AVENUE
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Wayanad</small>
+          <p class="card-text">Located in Wayanad, less than 1 km from Ancient Jain Temple, ARIAT AVENUE provides
+            accommodation with free WiFi and free private parking. This 3-star hotel offers a 24-hour front desk.
+            Wonderful experience with ariat avenue and the staff from calicut.
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9.6</span></h6>
+          <small>640 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 1,400 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 5 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/522204734.webp?k=2b44572b432fd06d0fb0d996ebf07ee3a9bff6d4f83a672862d29ed00bbc142c&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Konfudha Resort
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Kalpetta</small>
+          <p class="card-text">Situated in Kalpetta, 10 km from Pookode Lake, Konfudha Resort features accommodation
+            with an outdoor swimming pool, free private parking, a garden and a terrace. Pool. I have never seen a pool
+            like this
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9</span></h6>
+          <small>600 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 2,499 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 6 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/497137308.webp?k=83a78ec6fd51daae47208cb0937e3cf7865813c03d3d0e30b4dcf9fc606b1857&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">IvyArk Residency
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Pinangode</small>
+          <p class="card-text">Set in Pinangode, 2.9 km from Karlad Lake, IvyArk Residency offers accommodation with a
+            garden, free private parking and a terrace. Thoroughly enjoyed staying 3 days here and travelling to all
+            places
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Exceptional<span class="badge rounded-pill text-bg-primary">9.8</span></h6>
+          <small>800 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 1,900 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 7 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/477568613.webp?k=f5191342a85f3055fa5cda4d1902e07af1634966781c57a14785506c2cc56962&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">B'camp Resorts and Homestays
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Wayanad</small>
+          <p class="card-text">Set in Wayanad, 9.4 km from Kanthanpara Waterfalls, B'camp Resorts & Homestays offers
+            accommodation with a garden, free private parking and a restaurant. It was too good stay awesome
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Exceptional<span class="badge rounded-pill text-bg-primary">9.7</span></h6>
+          <small>700 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 5,400 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 8 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/462315830.webp?k=231bc735948db583d7c00693484f14ea98bcd26f2d49c2d8c97c4cdd0ad75df3&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Arakkal GuestHouse
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Kalpetta</small>
+          <p class="card-text">Situated in Kalpetta, 13 km from Pookode Lake, ARAKKAL GUESTHOUSE features accommodation
+            with free WiFi and free private parking. Great Location, Spacious and clean rooms, Excellent staff service
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9.2</span></h6>
+          <small>530 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 1,782 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 9 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/415951060.webp?k=c9fbf04b2011c0bd05b3f99e4f405e6a3af3f4e59f7db8e500fda1e3f98db351&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Saugandhika West Gate
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Wayanad</small>
+          <p class="card-text">Set in Wayanad, 5.5 km from Ancient Jain Temple, Saugandhika West Gate offers
+            accommodation with an outdoor swimming pool, free private parking, a fitness centre and a garden. The
+            manager Jaznan who
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9.2</span></h6>
+          <small>380 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 4,500 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 10 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/455163630.webp?k=5e2a0ad0295139d8e7fe1ffffba37571d6be1ec49f2ace7740cbee6b1821b87f&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">SATRA WAYANAD
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Kalpetta</small>
+          <p class="card-text">SATRA WAYANAD is situated in Kalpetta, 13 km from Karlad Lake and 14 km from Pookode
+            Lake. This 3-star hotel offers room service and a 24-hour front desk. really nice staff, I mean too nice! I
+            would visit again without any second thoughts..
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Fabulous<span class="badge rounded-pill text-bg-primary">8.2</span></h6>
+          <small>3640 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 2,232. 50 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+  <!-- Footer -->
+  <div class="footer bg-dark text-light p-5">
+    <table class="container">
+      <thead>
+        <tr>
+          <td>Andhra Pradesh</td>
+          <td>Gujarat</td>
+          <td>Karnataka</td>
+          <td>Punjab</td>
+        </tr>
+
+        <tr>
+          <td>Tamil Nadu</td>
+          <td>Himachal Pradesh</td>
+          <td>Arunachal Pradesh</td>
+          <td>Kerala</td>
+        </tr>
+
+        <tr>
+          <td>Delhi</td>
+          <td>Kerala</td>
+          <td>Jammu Kashmir</td>
+          <td>Ladakh</td>
+        </tr>
+
+        <tr>
+          <td>Puducherry</td>
+          <td>Assam</td>
+          <td>Goa</td>
+          <td>Ooty</td>
+        </tr>
+      </thead>
+    </table>
+    <br>
+    <div style="justify-content: space-evenly;" class="text-center">
+      <p>Follow Us</p>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-youtube"></i>
+    </div><br>
+
+    <div class="text-center bg-secondary p-2 end-0" style="margin-bottom: -50px;">
+      <p>@2024 Our Company</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function button() {
+      alert('Not Available Now, Try Again Later')
+    }
+  </script>
+
+</body>
+
+</html>

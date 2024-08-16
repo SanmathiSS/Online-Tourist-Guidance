@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #1BB295 ;
+        }
+
+
+        .card img {
+            width: 450px;
+            height: 300px;
+            padding: 10px;
+        }
+
+        .card:hover {
+            cursor: pointer;
+            box-shadow: 0 2px 3px 2px grey;
+        }
+
+        span {
+            background-color: #1BB295;
+        }
+
+        .btn {
+            background-color: #1BB295;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #179b81;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://img.freepik.com/free-vector/flat-vintage-travel-background_23-2148189177.jpg?w=740&t=st=1719841538~exp=1719842138~hmac=6e6bdc95cd285fd10efd825f95240af3d14ed4a0b910310216da082e18aa259b"
+                    alt="" width="50" height="35" class="d-inline-block align-text-top">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Favourite Spot
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="TamilNadu.html">TamilNadu</a></li>
+                            <li><a class="dropdown-item" href="Karnataka.html">Karnataka</a></li>
+                            <li><a class="dropdown-item" href="Andhra.html">Andhra Pradesh</a></li>
+                            <li><a class="dropdown-item" href="Delhi.html">Delhi</a></li>
+                            <li><a class="dropdown-item" href="Kerala.html">Kerala</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Booking Form.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Accomodation.html">Accomodation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Directions.html">Directions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="User.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- image -->
+    <div>
+        <img src="https://thumbs.dreamstime.com/b/culture-tamilnadu-illustration-depicting-india-41869248.jpg"
+            alt="Responsive image" style=" width: 1345px; height: 550px;" class="img-fluid">
+    </div><br><br>
+
+    <!-- cards -->
+    <div class="row row-cols-1 row-cols-md-3 ms-3 me-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://pujacraft.com/cdn/shop/articles/Brihadeeswarar-Temple-Thanjavur-Tamil-Nadu-1.jpg?v=1684509985"
+                    class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Brihadeeswara Temple</h5>
+                    <h4><span class="badge">Thanjavur</span></h4>
+                    <p class="card-text overflow-auto">Brihadeeshwara Temple, called Rajarajesvaram by its builder, and
+                        known locally
+                        as Thanjai Periya Kovil and Peruvudaiyar Kovil, is a Shaivite Hindu temple built in a Chola
+                        architectural style located on the south bank of the Cauvery river in Thanjavur, Tamil Nadu,
+                        India. It is one of the largest Hindu temples and an exemplar of Tamil architecture. It is also
+                        called Dakshina Meru (Meru of the South).</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+
+
+                <div class="card-footer">
+                    <small class="text-body-secondary">It's a very good place to visit either with family or
+                        friends.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://mediaim.expedia.com/destination/2/5a433cd7f8ea09dfad052e052c4827f4.jpg"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Meenakshi Amman Temple</h5>
+                    <h4><span class="badge">Madurai</span></h4>
+                    <p class="card-text">Arulmigu Meenakshi Sundareswarar Temple a.k.a Arulmigu Meenakshi Amman
+                        Thirukkovil is a historic Hindu temple located on the southern bank of the Vaigai River in the
+                        temple city of Madurai, Tamil Nadu, India. It is dedicated to the goddess Meenakshi, a form of
+                        Shakti, and her consort, Sundareshwarar, a form of Shiva. The temple is at the centre of the
+                        ancient temple city of Madurai mentioned in the Tamil Sangam literature.
+                    </p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">I love visiting temples because they are so impressive and
+                        beautiful.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/rameswaram-temple-1656167436_f2c551193bb7d4bc6f70.webp"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Rameshwaram</h5>
+                    <h4><span class="badge">Ramanathapuram</span></h4>
+                    <p class="card-text">Rameswaram is a municipality in the Ramanathapuram district of the Indian state
+                        of Tamil Nadu. It is on Pamban Island separated from mainland India by the Pamban channel and is
+                        about 40 kilometres from Mannar Island, Sri Lanka. It is in the Gulf of Mannar, at the tip of
+                        the Indian peninsula. Pamban Island, also known as Rameswaram Island, is connected to mainland
+                        India by the Pamban Bridge.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4  ms-3 me-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Chennai_-_bird%27s-eye_view.jpg"
+                    class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Marina Beach</h5>
+                    <h4><span class="badge">Chennai</span></h4>
+                    <p class="card-text overflow-auto">Marina Beach, or simply the Marina, is a natural urban beach in
+                        Chennai, Tamil Nadu, India, along the Bay of Bengal. The beach runs from near Fort St. George in
+                        the north to Foreshore Estate in the south, a distance of 6.0 km, making it the second longest
+                        urban beach in the world, after Cox's Bazar Beach. It is a prominent landmark in Chennai. The
+                        Marina is a primarily sandy beach, with an average width of 300 m (980 ft).</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">It's a very good place to visit either with family or
+                        friends.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i0.wp.com/www.travelure.in/wp-content/uploads/2018/12/Shore-Temple-for-Blog-Header-1.jpg?fit=1600%2C955&ssl=1"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Shore Temple</h5>
+                    <h4><span class="badge">Mahabalipuram</span></h4>
+                    <p class="card-text">The Shore Temple is a complex of temples and shrines that overlooks the shore
+                        of the Bay of Bengal. It is located in Mahabalipuram, about 60 kilometres south of Chennai in
+                        Tamil Nadu, India. It is a structural temple, built with blocks of granite, dating from the 8th
+                        century AD. At the time of its creation, the site was a busy port during the reign of
+                        Narasimhavarman II of the Indian Pallava dynasty.
+                    </p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">I love visiting temples because they are so impressive and
+                        beautiful.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.trawell.in/blog/wp-content/uploads/2021/03/Main_Image-730x410.jpg"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Kodaikanal Lake</h5>
+                    <h4><span class="badge">Kodaikanal</span></h4>
+                    <p class="card-text">Kodaikanal Lake, also known as Kodai Lake, is a manmade lake located in the
+                        Kodaikanal city in Dindigul district in Tamil Nadu, India. Sir Vere Henry Levinge,[1] the then
+                        Collector of Madurai, was instrumental in creating the lake in 1863, amidst the Kodaikanal town
+                        which was developed by the British and early missionaries from USA. The lake is said to be
+                        Kodaikanal's most popular geographic landmark and tourist attraction.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4 ms-3 me-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://c1.staticflickr.com/5/4741/27834614469_9df569d0e3_h.jpg"
+                    class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Annamalai Tiger Reserve</h5>
+                    <h4><span class="badge">Pollachi</span></h4>
+                    <p class="card-text overflow-auto">Anaimalai Tiger Reserve, earlier known as Indira Gandhi Wildlife
+                        Sanctuary and National Park and as Anaimalai Wildlife Sanctuary, is a protected area in the
+                        Anaimalai Hills of Pollachi and Valparai taluks of Coimbatore District and Udumalaipettai taluk
+                        in Tiruppur District, Tamil Nadu, India. The Tamil Nadu Environment and Forests Department by a
+                        notification dated 27 June 2007, declared an extent of 958.59 km2.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">It's a very good place to visit either with family or
+                        friends.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.opindia.com/wp-content/uploads/2023/06/temple.jpg"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Nataraja Temple</h5>
+                    <h4><span class="badge">Chidambaram</span></h4>
+                    <p class="card-text">Thillai Nataraja Temple, also referred as the Chidambaram Nataraja Temple, is a
+                        Hindu temple dedicated to Nataraja, the form of Shiva as the lord of dance. This temple is
+                        located in Chidambaram, Tamil Nadu, India. This temple has ancient roots and a Shiva shrine
+                        existed at the site when the town was known as Thillai. Chidambaram, the name of the city
+                        literally means "stage of consciousness"
+                    </p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">I love visiting temples because they are so impressive and
+                        beautiful.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.india.com/wp-content/uploads/2018/08/Nilgiri-Main.jpg"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Nilgiri Mountain Railway</h5>
+                    <h4><span class="badge">Nilgiri</span></h4>
+                    <p class="card-text">The Nilgiri Mountain Railway is a 1,000 mm metre gauge railway in Nilgiris
+                        district, Tamil Nadu, India, built by the British in 1908. The railway is operated by the
+                        Southern Railway and is the only rack railway in India. The railway relies on its fleet of steam
+                        locomotives. NMR switched to diesel locomotives on the section between Mettupalyam and
+                        Udhagamandalam. Local people and visitors led a campaign to return.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <!-- Footer -->
+    <div class="footer bg-dark text-light p-5">
+        <table class="container">
+            <thead>
+                <tr>
+                    <td>Andhra Pradesh</td>
+                    <td>Gujarat</td>
+                    <td>Karnataka</td>
+                    <td>Punjab</td>
+                </tr>
+
+                <tr>
+                    <td>Tamil Nadu</td>
+                    <td>Himachal Pradesh</td>
+                    <td>Arunachal Pradesh</td>
+                    <td>Kerala</td>
+                </tr>
+
+                <tr>
+                    <td>Delhi</td>
+                    <td>Kerala</td>
+                    <td>Jammu Kashmir</td>
+                    <td>Ladakh</td>
+                </tr>
+
+                <tr>
+                    <td>Puducherry</td>
+                    <td>Assam</td>
+                    <td>Goa</td>
+                    <td>Ooty</td>
+                </tr>
+            </thead>
+        </table>
+        <br>
+        <div style="margin-left: 1050px; font-size: x-large;">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+        </div><br>
+
+        <div class="text-center bg-secondary p-2 end-0" style="margin-bottom: -50px;">
+            <p>@2024My Yiur Company</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function button() {
+            alert('Not Available now, Try Again Later')
+        }
+    </script>
+</body>

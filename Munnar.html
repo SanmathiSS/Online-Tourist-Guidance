@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .checked {
+      color: orange;
+    }
+
+    .card {
+      /* max-width: 30em; */
+      flex-direction: row;
+      background-color: #696969;
+      border: 1px solid black;
+      /* box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); */
+      /* margin: 3em auto; */
+    }
+
+    .card.dark {
+      color: #fff;
+    }
+
+    .card.card.bg-light-subtle .card-title {
+      color: dimgrey;
+    }
+
+    .card img {
+      max-width: 25%;
+      margin: auto;
+      padding: 0.5em;
+      border-radius: 0.7em;
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .text-section {
+      max-width: 60%;
+    }
+
+    .cta-section {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: 200px;
+    }
+
+    .cta-section .btn {
+      padding: 0.3em 0.5em;
+      /* color: #696969; */
+    }
+
+
+    .card.bg-light-subtle {
+      background-color: #898989;
+      border-color: #898989;
+    }
+
+
+    @media screen and (max-width: 475px) {
+      .card {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Favourite Spot
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="TamilNadu.html">TamilNadu</a></li>
+              <li><a class="dropdown-item" href="Karnataka.html">Karnataka</a></li>
+              <li><a class="dropdown-item" href="Andhra.html">Andhra Pradesh</a></li>
+              <li><a class="dropdown-item" href="Delhi.html">Delhi</a></li>
+              <li><a class="dropdown-item" href="Kerala.html">Kerala</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Booking Form.html">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Accomodation.html">Accomodation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Directions.html">Directions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="User.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/111815742.webp?k=ecab2c38b1d3ffac4f22bdd8fade362b446454d12dfa8634fb578762a088e915&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Blanket Hotel & Spa
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Munnar</small>
+          <p class="card-text">Featuring free WiFi and a spa centre, Blanket Hotel & Spa offers accommodation in Munnar.
+            The hotel has an outdoor pool and views of the garden, and guests can enjoy a meal at the restaurant.
+            Location...
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9</span></h6>
+          <small>3640 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 10,500 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 2 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/431906902.webp?k=dbd40f90fb68eaf24cb4368269925293aa18cc03653038d72b5d9ea31e8c68d1&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">The Panaramic Getaway
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Munnar</small>
+          <p class="card-text">Offering two rooftop heated swimming pools separate for adults and families, two
+            restaurants and a spa and wellness center, The Panoramic Getaway is located in scenic hill station of
+            Munnar. The staff are
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9</span></h6>
+          <small>7030 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 9,800 per night</div>
+          <a href="#" class="btn btn-primary onclick=" button()"">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 3 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/510874326.webp?k=841bcc234a7dbce65d4ec589fbe1967ddd9e46baa3bc50711618be67b04bcad8&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Misty Wonders
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Munnar</small>
+          <p class="card-text">Located in Munnar, 12 km from Munnar Tea Museum, Misty Wonders provides accommodation
+            with a garden, free private parking and a terrace. Brand new property of amazing quality with breathtaking
+            views
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9.1</span></h6>
+          <small>260 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 6,000 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 4 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/497808835.webp?k=07061dcaf76abe015cd71deb660e350294dcf51fbed9a318bf1726fa347a6305&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Avadale Munnar (Stag Groups Not Allowed)
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Chinnakanal</small>
+          <p class="card-text">Set in Chinnakanal, 34 km from Munnar Tea Museum, Avadale Munnar (Stag Groups Not
+            Allowed) offers accommodation with a garden, free private parking, a terrace and a restaurant. Property:
+            Really beautiful...
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9.2</span></h6>
+          <small>1300 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 3,150 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 5 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/324670555.webp?k=09f9d442c1c677ff171e604b5d0b903a0dda1630165675b900c70872cc9671ac&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Elephant Passage
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Munnar</small>
+          <p class="card-text">Set in Munnar, 24 km from Munnar Tea Museum, Elephant Passage offers accommodation with
+            an outdoor swimming pool, free private parking, a garden and a restaurant. This 5-star hotel offers a
+            tour....
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Very Good<span class="badge rounded-pill text-bg-primary">8.5</span></h6>
+          <small>1,082 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 6,499 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 6 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/426458776.webp?k=f19c00f3ea2106ebabeddfac26b9c85cbf69f3f8de90a1e99fd37f92abd878cd&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Sprise Munnar Resort and Spa
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Munnar</small>
+          <p class="card-text">Set in Munnar, 17 km from Munnar Tea Museum, Sprise Munnar Resort and Spa offers
+            accommodation with an outdoor swimming pool, free private parking, a garden and a restaurant. The
+            facilities...
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Fabulous<span class="badge rounded-pill text-bg-primary">8.9</span></h6>
+          <small>1003 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 6,000 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 7 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/377910508.webp?k=7bc43b0b37f4c484d0b7f99b27ceaad9dfd5156d2752c9aaa9c713ea213669f4&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Santhi Hill View Resort
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Munnar</small>
+          <p class="card-text">Set in Munnar, 16 km from Munnar Tea Museum, Santhi Hill View Resort offers accommodation
+            with a garden, free private parking, a terrace and a restaurant. The location, privacy, friendly staff.
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Very Good<span class="badge rounded-pill text-bg-primary">8.3</span></h6>
+          <small>1220 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 3,499 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 8 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/287824165.webp?k=7b9a7ded93baba409dc872a27e7eddab4ce829913a54ef80970f9ad7072b65ef&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Tea Garden Riverside
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Munnar</small>
+          <p class="card-text">Set in Munnar, 2.6 km from Munnar Tea Museum, Tea Garden Riverside offers accommodation
+            with free WiFi and free private parking. Clean and close to town and walking distance to tea...
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Very Good<span class="badge rounded-pill text-bg-primary">8.2</span></h6>
+          <small>3640 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 2,250 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 9 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/332491278.webp?k=f075ab741aa97d04a13a4a38763951e571361d4597d30e1c7d9be05643f97e8d&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">MSP Amma Cottage
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Munnar</small>
+          <p class="card-text">Located in Munnar, 3.4 km from Munnar Tea Museum, MSP Amma Cottage features accommodation
+            with a garden, private parking and a terrace. It's a good one and value for money...
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Very Good<span class="badge rounded-pill text-bg-primary">8.4</span></h6>
+          <small>2500 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 949 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 10 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/363406667.webp?k=86e40452f7b2dd121053d8831e2b09892144e7ec569dec527df598cda2e42ff1&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Kurinji Wonderlust Resort Munnar
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Munnar</small>
+          <p class="card-text">Located in Munnar, 3.5 km from Munnar Tea Museum, Kurinji Wanderlust Resort Munnar
+            provides accommodation with a garden, free private parking, a shared lounge and a terrace. Hospitality
+            was....
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Very Good<span class="badge rounded-pill text-bg-primary">8.5</span></h6>
+          <small>5610 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 1,599 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+  <!-- Footer -->
+  <div class="footer bg-dark text-light p-5">
+    <table class="container">
+      <thead>
+        <tr>
+          <td>Andhra Pradesh</td>
+          <td>Gujarat</td>
+          <td>Karnataka</td>
+          <td>Punjab</td>
+        </tr>
+
+        <tr>
+          <td>Tamil Nadu</td>
+          <td>Himachal Pradesh</td>
+          <td>Arunachal Pradesh</td>
+          <td>Kerala</td>
+        </tr>
+
+        <tr>
+          <td>Delhi</td>
+          <td>Kerala</td>
+          <td>Jammu Kashmir</td>
+          <td>Ladakh</td>
+        </tr>
+
+        <tr>
+          <td>Puducherry</td>
+          <td>Assam</td>
+          <td>Goa</td>
+          <td>Ooty</td>
+        </tr>
+      </thead>
+    </table>
+    <br>
+    <div style="justify-content: space-evenly;" class="text-center">
+      <p>Follow Us</p>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-youtube"></i>
+    </div><br>
+
+    <div class="text-center bg-secondary p-2 end-0" style="margin-bottom: -50px;">
+      <p>@2024 Our Company</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function button() {
+      alert('Not Available Now, Try After Sometime')
+    }
+  </script>
+
+</body>
+
+</html>

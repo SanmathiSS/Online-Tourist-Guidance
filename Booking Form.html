@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::before {
+      content: "";
+      background-image: url("https://deih43ym53wif.cloudfront.net/large_india-jodhpur-mehrangarh-fort-shutterstock_273400190_3fee5c0b96.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+    }
+
+    h1 {
+      position: relative;
+      color: #ffffff;
+      font-size: 55px;
+      line-height: 0.9;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Favourite Spot
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="TamilNadu.html">TamilNadu</a></li>
+              <li><a class="dropdown-item" href="Karnataka.html">Karnataka</a></li>
+              <li><a class="dropdown-item" href="Andhra.html">Andhra Pradesh</a></li>
+              <li><a class="dropdown-item" href="Delhi.html">Delhi</a></li>
+              <li><a class="dropdown-item" href="Kerala.html">Kerala</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Booking Form.html">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Accomodation.html">Accomodation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Directions.html">Directions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="User.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>India Tour Packages</h1>
+  </div>
+  <br>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/Chennai-family-tour-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Chennai, Tirupati</small>
+            <p>Special Chennai Tirupati Darshan Package</p>
+            <small>15000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/Meenakshiamman-temple-tour-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Madurai, Kodaikanal</small>
+            <p>Scenic Madurai Kodaikanal Tour Package</p>
+            <small>20000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/cochin-travel-package-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Cochin, Munnar, Thekkady</small>
+            <p>Kerala Special Holiday Package</p>
+            <small>30000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/kerala-boat-house-honeymoon-package-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Cochin, Alleppey, Kumarakom</small>
+            <p>Mesmerizing Kerala Backwaters Tour Package</p>
+            <small>25000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/Wayanad-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Calicut, Wayanad</small>
+            <p>Escape to Wayanad</p>
+            <small>45000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/Snow-world-summer-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Hyderabad</small>
+            <p>4 Days Hyderabad Delight</p>
+            <small>50000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/Thotlakonda-summer-holiday-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Vizag, Araku</small>
+            <p>Calm Charm Vizag Araku Valley 3 Nights/ 4 Days</p>
+            <small>45000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/bangalore-city-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Bangalore, Coorg</small>
+            <p>Escape to Coorg</p>
+            <small>25000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/Kanyakumari-3-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Madurai, Rameshwaram, Kanyakumari,
+              Tiruvandrum</small>
+            <p>South Pilgrimage Tour Package</p>
+            <small>55000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>4 Nights 5 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/Meenakshiamman-temple-tour-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Madurai, Kodaikanal, Rameshwaram, Kanyakumari,
+              Tiruvandrum</small>
+            <p>Exotic Tamil Nadu Travel Package</p>
+            <small>20000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>6 Nights 7 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/Thekkady-summer-vacation-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Cochin, Munnar, Thekkady</small>
+            <p>Enchanting Kerala Delight</p>
+            <small>30000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>4 Nights 5 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/alleppey-boat-house-holiday-trip-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Alleppey, Kerala, India</small>
+            <p>Marvelous Kerala with Alleppey</p>
+            <small>50000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>5 Nights 6 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/kerala-family-travel-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Kerala, Cochin, India</small>
+            <p>Best of Kerala Tour Package</p>
+            <small>25000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>5 Nights 6 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/Lal-Bagh-glass-house-tour-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Bangalore, Mysore, Coorg</small>
+            <p>Super Saver Holiday Package</p>
+            <small>25000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>5 Nights 6 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.thomascook.in/images/site-banners/ladakh.jpg" alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Ladakh</small>
+            <p>Kerala Special Holiday Package</p>
+            <small>35000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/honeymoon-couple-underwater-diving-in-andaman-680x500.jpeg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Port Blair, Excursion Ross, North Bay (Coral
+              Island), Viper Island, Havelock</small>
+            <p>Mesmerizing Kerala Backwaters Tour Package</p>
+            <small>50000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/lonavala-trip-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Pune, Mahabaleshwar</small>
+            <p>Pune, Mahabaleshwar Holiday Tour Package</p>
+            <small>15000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/06/Pramukh-Swami-Maharaj-haridwar-tour-packages-680x500.jpeg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Delhi, Haridwar, Rishikesh</small>
+            <p>The Gulf Odyssey Dubai - Muscat - High Sea - Mumbai</p>
+            <small>20000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/beach-pondicherry-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Pondicherry</small>
+            <p>Spectacular Pondicherry Tour</p>
+            <small>30000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>1 Nights 2 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/Agra-tajmahal-educational-tour-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Delhi, Agra</small>
+            <p>The Golden Triangle Tour</p>
+            <small>75000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>5 Nights 6 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/goa-educational-packages-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Goa</small>
+            <p>Dazzling Goa Special Offer Package</p>
+            <small>35000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>4 Nights 5 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.gtholidays.in/wp-content/uploads/2019/07/Gokarnatheshwara-Temple-mangalore-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>mangalore, Goa</small>
+            <p>Serene Mangalore-Goa 5 Days Tour</p>
+            <small>50000</small>
+            <p class="text-warnindg"><i class="fa fa-clock-o text-secondary"></i>4 Nights 5 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/ooty-1-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Ooty, Wayanad</small>
+            <p>A Vivifying Vacation to Ooty and Wayanad</p>
+            <small>30000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>2 Nights 3 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/parliament-delhi-tour-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Nainital, India</small>
+            <p>Short Break to Mussorie</p>
+            <small>50000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>9 Nights 10 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/lotus-temple-delhi-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Delhi, Carbett, Nainital</small>
+            <p>Golden Triangle Tour- 4 Nights</p>
+            <small>45000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>4 Nights 5 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2024/01/holy-ayodhya-kashi-tour-package-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Ayodhya, Kashi</small>
+            <p>Holy Ayodhya Kashi Tour</p>
+            <small>150000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/mountaineerz-manali-680x500.jpg" alt=""
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Delhi, Shimla, Manalai, Chandigarh</small>
+            <p>Enchanting Himachal Tour</p>
+            <small>100000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>6 Nights 7 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://www.gtholidays.in/wp-content/uploads/2019/07/North-islsnd-vacation-packages-680x500.jpg"
+              alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="card-body">
+            <small class="text-secondary"><i class="fa fa-map-marker"></i>Port Blair, Havelock</small>
+            <p>Mystic Marine Trails</p>
+            <small>80000</small>
+            <p class="text-warning"><i class="fa fa-clock-o text-secondary"></i>3 Nights 4 Days</p>
+            <a href="package book.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+
+    <!-- Footer -->
+    <div class="footer bg-dark text-light p-5">
+      <table class="container">
+        <thead>
+          <tr>
+            <td>Andhra Pradesh</td>
+            <td>Gujarat</td>
+            <td>Karnataka</td>
+            <td>Punjab</td>
+          </tr>
+
+          <tr>
+            <td>Tamil Nadu</td>
+            <td>Himachal Pradesh</td>
+            <td>Arunachal Pradesh</td>
+            <td>Kerala</td>
+          </tr>
+
+          <tr>
+            <td>Delhi</td>
+            <td>Kerala</td>
+            <td>Jammu Kashmir</td>
+            <td>Ladakh</td>
+          </tr>
+
+          <tr>
+            <td>Puducherry</td>
+            <td>Assam</td>
+            <td>Goa</td>
+            <td>Ooty</td>
+          </tr>
+        </thead>
+      </table>
+      <br>
+      <div style="justify-content: space-evenly;" class="text-center">
+        <p>Follow Us</p>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+      </div><br>
+
+      <div class="text-center bg-secondary p-2 end-0" style="margin-bottom: -50px;">
+        <p>@2024My Yiur Company</p>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+<!-- 
+    <script>
+      function button() {
+        alert('Not Available Now, Try Again Later')
+      }
+    </script> -->
+</body>
+
+</html>

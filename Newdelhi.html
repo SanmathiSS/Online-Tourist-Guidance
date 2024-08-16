@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .card {
+            /* max-width: 30em; */
+            flex-direction: row;
+            background-color: #696969;
+            border: 1px solid black;
+            /* box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); */
+            /* margin: 3em auto; */
+        }
+
+        .card.dark {
+            color: #fff;
+        }
+
+        .card.card.bg-light-subtle .card-title {
+            color: dimgrey;
+        }
+
+        .card img {
+            max-width: 25%;
+            margin: auto;
+            padding: 0.5em;
+            border-radius: 0.7em;
+        }
+
+        .card-body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .text-section {
+            max-width: 60%;
+        }
+
+        .cta-section {
+            max-width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-top: 210px;
+        }
+
+        .cta-section .btn {
+            padding: 0.3em 0.5em;
+            /* color: #696969; */
+        }
+
+
+        .card.bg-light-subtle {
+            background-color: #898989;
+            border-color: #898989;
+        }
+
+
+        @media screen and (max-width: 475px) {
+            .card {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+</body>
+<nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Favourite Spot
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="TamilNadu.html">TamilNadu</a></li>
+                        <li><a class="dropdown-item" href="Karnataka.html">Karnataka</a></li>
+                        <li><a class="dropdown-item" href="Andhra.html">Andhra Pradesh</a></li>
+                        <li><a class="dropdown-item" href="Delhi.html">Delhi</a></li>
+                        <li><a class="dropdown-item" href="Kerala.html">Kerala</a></li>
+                      </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Booking Form.html">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Accomodation.html">Accomodation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Directions.html">Directions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="User.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 1 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/252154916.webp?k=d33d6ada6cb47933543811c0b88635c4d86e705bb329342d81e26059c47123f9&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">ibis New Delhi Aerocity - An Accor Brand
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in South West, New Delhi</small>
+                <p class="card-text">The hotel is located next to India's busiest international airport. The Airport
+                    Express metro line is just walking distance from the hotel, leading you to VFS Visa Centre in 20min.
+                <p><a href="#" class="link-underline-primary">Read More</a></p>
+                </p>
+                <h4 style="margin-top: 30px;">Pleasant<span class="badge rounded-pill text-bg-primary">6.8</span></h4>
+                <small>8,180 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 5,500 per night</div>
+                <a href="resort book.html" class="btn btn-primary">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!-- 2 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/278261524.webp?k=4531528d436b0c68e6897060212dd579fd102c4923f246914c2d1a22ea9fa711&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">Pride Plaza Hotel, Aerocity NewDelhi
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in South West, NewDelhi</small>
+                <p class="card-text">Ideally located close to the Delhi international and domestic airport, the hotel
+                    has an easy access to the corporate and commercial hubs of Delhi, Gurgaon and the NCR regions.</p>
+                <h4 style="margin-top: 30px;">Good<span class="badge rounded-pill text-bg-primary">7.5</span></h4>
+                <small>4,1050 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 9069.30 per night</div>
+                <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<!-- 3 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/328920641.webp?k=2578785e9b04aa850beb25ab2b8ec9389564a44cfa61efe49980d8b771d4c12e&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">Radisson Blu Plaza Delhi Airport
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Mahipalpur, New Delhi</small>
+                <p class="card-text">Located only 3 km away from Indira Gandhi International Airport along the
+                    Delhi-Gurgaon Expressway, Radisson Blu Plaza Delhi features luxurious and modern rooms with free
+                    WiFi.</p>
+                <h4 style="margin-top: 30px;">Very Good<span class="badge rounded-pill text-bg-primary">8.2</span></h4>
+                <small>6,596 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 9,679.50 per nigth</div>
+                <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<!-- 4 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/234890162.webp?k=cb59173225191e9c9e1e45470d422f4272a58f33e5114a70f0e8ca8746f63472&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">Holiday Inn New Delhi International Airport, an IHG Hotel
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in South West, New Delhi</small>
+                <p class="card-text">Offering an outdoor swimming pool, a fitness centre and a spa and wellness centre,
+                    Holiday Inn New Delhi International Airport is located in New Delhi. Free WiFi access is available.
+                </p>
+                <h4 style="margin-top: 30px;">Good<span class="badge rounded-pill text-bg-primary">7.9</span></h4>
+                <small>5,790 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 9,849 per night</div>
+                <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!-- 5 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/252166334.webp?k=f16f39264877acde7fa48084ed145b2d83f3b7fd6072378aa489c87f6212a249&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">Novotel New Delhi Aerocity-Intermational Airport
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in South West, New Delhi</small>
+                <p class="card-text">Located at a 7 minutes' drive from the Indira Gandhi International Airport, Novotel
+                    New Delhi International Airport offers 2 family-friendly dining options including a 24X7 Sports Bar.
+                </p>
+                <h4 style="margin-top: 30px;">Good<span class="badge rounded-pill text-bg-primary">7.7</span></h4>
+                <small>5,390 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 9,000 per night</div>
+                <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<!-- 6 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/44025013.webp?k=577d5b5d2a9e9a31d20048a99cb10e8a631d73a7a71573d7e1dd0c60c4df6b76&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">The Ashok, New Delhi
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Chanakyapuri, New Delhi</small>
+                <p class="card-text">Located in the capital city of India, The Ashok offers a host of facilities such as
+                    an outdoor swimming pool, spa and wellness centre and a fitness centre. Free WiFi access is
+                    available.</p>
+                <h4 style="margin-top: 30px;">Pleasant<span class="badge rounded-pill text-bg-primary">6.5</span></h4>
+                <small>2,308 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 8,888 per night</div>
+                <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<!-- 7 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/336041746.webp?k=f8f712a77ed00e077b1f069eca66edfec9fc8a2ca58b8a25dc9391c3f9d3317d&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">Taj palace, New Delhi
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Chanakyapuri, New Delhi</small>
+                <p class="card-text">Spread over six acres of lush gardens, offering an outdoor swimming pool and
+                    panoramic city views, Taj Palace New Delhi is located in New Delhi. WiFi access is available.</p>
+                <h4 style="margin-top: 30px;">Fabulous<span class="badge rounded-pill text-bg-primary">8.7</span></h4>
+                <small>3,824 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 14,500 per night</div>
+                <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<!-- 8 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/467531007.webp?k=c2f36456d250b5fd68c86375c5861114afe751f98c81e3ebece9ae70c3d456e3&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">Aloft New Delhi Aerocity
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in South West, New Delhi</small>
+                <p class="card-text">Boasting a fitness centre and a garden, Aloft New Delhi Aerocity is located in New
+                    Delhi, 2 km from New Delhi International Airport.</p>
+                <h4 style="margin-top: 30px;">Very Good<span class="badge rounded-pill text-bg-primary">8.2</span></h4>
+                <small>3,824 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 10,250 per night</div>
+                <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<!-- 9 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/30393271.webp?k=6647e22640d4c9e73730c30eb2bc6a4fa94a2ad88590c8ba55de2dbbdec765b1&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">WelcomHotel by ITC Hotels, Dwarka, New Delhi
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Dwarka, New Delhi</small>
+                <p class="card-text">Located in one of Asia's largest sub-cities in the National Capital Region,
+                    Welcomhotel by ITC Hotels, Dwarka, New Delhi pays homage, in a befitting tribute, to the warmth of
+                    the capital city.</p>
+                <h4 style="margin-top: 30px;">Good<span class="badge rounded-pill text-bg-primary">7.0</span></h4>
+                <small>3,348 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 6,960 per night</div>
+                <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<!-- 10 -->
+<div class="container">
+    <div class="card bg-light-subtle ms-5">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/72057788.webp?k=025bd88e2cc086bf26f7314c6895ab52d04b5212d8793bc7c3e4ce519e31aec8&o="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="text-section">
+                <h5 class="card-title fw-bold">The Leela Ambience Convention Hotel Delhi
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in East Delhi, New Delhi</small>
+                <p class="card-text">he Leela Ambience Convention Hotel, Delhi hotel features contemporary rooms, fine
+                    dining options and a fitness centre. It also has an outdoor swimming pool and a spa.</p>
+                <h4 style="margin-top: 30px;">Fabulous<span class="badge rounded-pill text-bg-primary">8.6</span></h4>
+                <small>1,803 reviews</small>
+            </div>
+            <div class="cta-section">
+                <div class="text-success fs-4 fw-bold">&#8377; 8,370 per night</div>
+                <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+
+<!-- Footer -->
+<div class="footer bg-dark text-light p-5">
+    <table class="container">
+        <thead>
+            <tr>
+                <td>Andhra Pradesh</td>
+                <td>Gujarat</td>
+                <td>Karnataka</td>
+                <td>Punjab</td>
+            </tr>
+
+            <tr>
+                <td>Tamil Nadu</td>
+                <td>Himachal Pradesh</td>
+                <td>Arunachal Pradesh</td>
+                <td>Kerala</td>
+            </tr>
+
+            <tr>
+                <td>Delhi</td>
+                <td>Kerala</td>
+                <td>Jammu Kashmir</td>
+                <td>Ladakh</td>
+            </tr>
+
+            <tr>
+                <td>Puducherry</td>
+                <td>Assam</td>
+                <td>Goa</td>
+                <td>Ooty</td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+    <div style="justify-content: space-evenly;" class="text-center">
+        <p>Follow Us</p>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+    </div><br>
+
+    <div class="text-center bg-secondary p-2 end-0" style="margin-bottom: -50px;">
+        <p>@2024 Our Company</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<!-- <script>
+    function button() {
+        alert('Not Available Now, Try Again Later')
+    }
+</script> -->
+
+<body>
+
+</html>

@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #37e2c0;
+        }
+
+
+        .card img {
+            width: 450px;
+            height: 300px;
+            padding: 10px;
+        }
+
+        .card:hover {
+            cursor: pointer;
+            box-shadow: 0 2px 3px 2px grey;
+        }
+
+        span {
+            background-color: #1BB295;
+        }
+
+        .btn {
+            background-color: #1BB295;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #179b81;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://img.freepik.com/free-vector/flat-vintage-travel-background_23-2148189177.jpg?w=740&t=st=1719841538~exp=1719842138~hmac=6e6bdc95cd285fd10efd825f95240af3d14ed4a0b910310216da082e18aa259b"
+                    alt="" width="50" height="35" class="d-inline-block align-text-top">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Favourite Spot
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="TamilNadu.html">TamilNadu</a></li>
+                            <li><a class="dropdown-item" href="Karnataka.html">Karnataka</a></li>
+                            <li><a class="dropdown-item" href="Andhra.html">Andhra Pradesh</a></li>
+                            <li><a class="dropdown-item" href="Kashmir.html">Kashmir</a></li>
+                            <li><a class="dropdown-item" href="Kerala.html">Kerala</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Booking Form.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Accomodation.html">Accomodation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Directions.html">Directions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="User.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <img src=" https://thumbs.dreamstime.com/b/culture-kashmir-illustration-depicting-india-41868556.jpg"
+            alt="Responsive image" style=" width: 1345px; height: 550px;" class="img-fluid">
+    </div><br>
+
+    <div class="row row-cols-1 row-cols-md-3 ms-3 me-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2024/05/f9e45e16-srinagar-5200-ft-kashmir.jpg:cf-webp:w-400:h-200"
+                    class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Srinagar</h5>
+                    <h4><span class="badge">Jammu & Kashmir</span></h4>
+                    <p class="card-text overflow-auto">Srinagar, the summer capital of Jammu & Kashmir (J&K), is split
+                        into two by the river Jhelum. The star attraction here is the idyllic Dal Lake, having been
+                        ranked TripAdvisor's top travellers' choice for 2020. You can take a shikara ride in the daytime
+                        or a midnight cruise for a romantic evening. You will also spot Asia's most extensive Tulip
+                        Garden and India's only floating market here. Hotels in Kashmir cater to all kinds of
+                        travellers, so you can book your accommodation accordingly.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">It's a very good place to visit either with family or
+                        friends.</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/01/Gulmarg.jpg:cf-webp:w-400:h-200"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Gulmarg</h5>
+                    <h4><span class="badge">Kashmir</span></h4>
+                    <p class="card-text">Gulmarg is a beautiful place in Kashmir that is an absolute delight for
+                        adventure seekers. This is the state's crowning glory, offering the world's second-highest
+                        gondola ride to Apharwat Peak (14,403 ft.) and the third-highest ski resort. Skiing,
+                        snowboarding, trekking, and other activities will add more excitement to your holiday. For a
+                        culturally rich experience, visit this place during the three-day Winter Festival organised by
+                        the Indian Army and Tourism Ministry every year. Gulmarg is among the top 5 places to visit in
+                        Kashmir for adventure sports.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">I love visiting temples because they are so beautiful.</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/12/Pahalgam-winter.jpg:cf-webp:w-400:h-200"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Pahalgam</h5>
+                    <h4><span class="badge">Kashmir</span></h4>
+                    <p class="card-text">Pahalgam is a visual treat with its breathtaking vistas of lush greenery, vast
+                        Himalayan ranges, and pristine mountain rivers. Stretched along the Lidder River, it is a
+                        popular spot for adventure junkies to try trout fishing, trekking, and angling among others. It
+                        serves as the base camp for popular trekking getaways to Amarnath, Aru Valley, Kohaloi Glacier,
+                        and other Kashmir tourist places. Pahalgam is a wonderland that is dotted with prominent
+                        attractions like the Aru Valley and Betaab Valleys. You can either explore Pahalgam on foot or
+                        opt for a pony ride. Don't forget to bargain!</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4  ms-3 me-3">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2024/05/006f40b8-aharbal_falls_139323901.jpeg:cf-webp:w-400:h-200"
+                    class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Pulwama</h5>
+                    <h4><span class="badge">Kashmir</span></h4>
+                    <p class="card-text overflow-auto">Pulwama, one of the best places to visit in Kashmir is a city
+                        that should be on everyone's bucket list for multiple reasons. It is a famous tourist place in
+                        Kashmir for its widespread saffron fields, largest milk production, and untouched surroundings.
+                        It is truly the 'Delight of Kashmir., as its blissful aura is unrivalled among Kashmir's other
+                        attractions. It is a sought-after attraction where important religious sites and historical
+                        monuments can also be found. Do visit the Aharbal Waterfalls, Tarsar Lake, Shikargarh, and
+                        Avantishwar Temple here. If you aren't short on time, plan a 7-day Tarsar Marsar Trek; you won't
+                        be disappointed!
+                    </p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">It's a very good place to visit either with family or
+                        friends.</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2021/07/Aru_Valley_1000x650_11zon.jpg"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Aru Valley</h5>
+                    <h4><span class="badge">Kashmir</span></h4>
+                    <p class="card-text">Aru Valley's scenic beauty is like a Windows wallpaper image and is highly
+                        regarded among the famous Kashmir visiting places. You can explore the stunning sights of this
+                        valley on a pony ride or foot. The drive to this gem of Kashmir is an experience in itself. Book
+                        a cosy, local homestay, and savour traditional delicacies at roadside cafes. The Aru Valley
+                        presents unparalleled views of the Kashmir Valley, so if nature and tranquillity are what you
+                        seek, you know where to go. It is among the best places to visit in Kashmir for a picnic. You
+                        won't be able to get enough of the natural scenic views here, so don't miss this gem!</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">I love visiting temples because they are so beautiful.</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2021/07/7.-Yusmarg-Valley_1420058018.jpg"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Yusmarg Valley</h5>
+                    <h4><span class="badge">Kashmir</span></h4>
+                    <p class="card-text">Yusmarg or Yousmarg (lit. 'Meadow of Jesus' ; Urdu pronunciation: [juːsməɾɡ] ; Kashmiri pronunciation: [juːsmarɨɡ]) is a hill station in the western part of the Budgam district of Jammu and Kashmir, India. It is situated 53 km (33 mi) south of Srinagar, the summer capital of the state.[4] Yousmarg provides space for beautiful landscapes, young pine nurseries, green pastures and heart touching lotic and lentic water bodies. Nilnag, Doodhganga and a nascently created artificial dam adds more to the beauty of the meadows. Nature has bestowed Yusmarg with pleasant flora and fauna. Yusmarg is often referred to as a trekkers paradise.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4  ms-3 me-3">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/12/Patnitop-winter.jpg"
+                    class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Patnitop</h5>
+                    <h4><span class="badge">Kashmir</span></h4>
+                    <p class="card-text overflow-auto">Patnitop is one of Kashmir's most developed tourist locations
+                        where you can spend quality time with your loved ones in peace. On a clear day during winter,
+                        you can enjoy paragliding at Dawariyai. If you come here in the summer season, make a
+                        reservation for a round of golf at its 9-hole course (a major crowd-puller).You can also take a
+                        refreshing bath in any one of the area's three freshwater springs, which are
+                        thought to have medicinal properties. Patnitop is one of the best places in Kashmir to relax.
+                        Get your hands on a 'Patisa' prepared in pure desi ghee to satisfy your taste buds. Its
+                        melt-in-the-mouth texture will make you crave it even more.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">It's a very good place to visit either with family or
+                        friends.</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2021/07/9.-Dachigam-National-Park_1646303116.jpg"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Dachigam National Park</h5>
+                    <h4><span class="badge">Kashmir</span></h4>
+                    <p class="card-text">Dachigam National Park is a national park located, 22 kilometres (14 mi) from
+                        Srinagar city in Srinagar district of in the Indian-administered Kashmir on the east side of Dal
+                        Lake. It covers an area of about 141 square kilometres (54 sq mi). The name of the park
+                        literally stands for "ten villages" which is in the memory of the ten villages that were
+                        relocated for its formation. These ten villages were living in this region before the World War I in the beginning of 20th century. The main gate entrance is very close to the New Theed general bus stand on the either side of Darul Uloom Kousaria.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">I love visiting temples because they are so beautiful.</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2021/07/12.-Sanasar-_1087167920.jpg"
+                    class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Sanasar</h5>
+                    <h4><span class="badge">Kashmir</span></h4>
+                    <p class="card-text">TSanasar, a lesser-known gem and one of the most fascinating places to visit in
+                        Kashmir, is an eco-friendly village in the Ramban district of J&K. This attraction is notable
+                        for its cup-shaped meadow surrounded by huge conifers. If adventure and thrill are top of your
+                        list, this is the place for you. A day at Sanasar is all about adventures like a paragliding
+                        session or a hot balloon ride, as well as a horseback ride through the green hills followed by
+                        an overnight camp stay.If you cannot get enough of it, you can go rock climbing, trekking
+                        expeditions, or enjoy a game
+                        of golf at a premium golf course.</p>
+                    <a href="User.html" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer bg-dark text-light p-5">
+        <table class="container">
+            <thead>
+                <tr>
+                    <td>Andhra Pradesh</td>
+                    <td>Gujarat</td>
+                    <td>Karnataka</td>
+                    <td>Punjab</td>
+                </tr>
+
+                <tr>
+                    <td>Tamil Nadu</td>
+                    <td>Himachal Pradesh</td>
+                    <td>Arunachal Pradesh</td>
+                    <td>Kerala</td>
+                </tr>
+
+                <tr>
+                    <td>Delhi</td>
+                    <td>Kerala</td>
+                    <td>Jammu Kashmir</td>
+                    <td>Ladakh</td>
+                </tr>
+
+                <tr>
+                    <td>Puducherry</td>
+                    <td>Assam</td>
+                    <td>Goa</td>
+                    <td>Ooty</td>
+                </tr>
+            </thead>
+        </table>
+        <br>
+        <div style="margin-left: 1050px; font-size: x-large;">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+        </div><br>
+
+        <div class="text-center bg-secondary p-2 end-0" style="margin-bottom: -50px;">
+            <p>@2024My Yiur Company</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function button() {
+            alert('Not Available now, Try Again Later')
+        }
+    </script>
+</body>

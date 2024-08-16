@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .checked {
+      color: orange;
+    }
+
+    .card {
+      /* max-width: 30em; */
+      flex-direction: row;
+      background-color: #696969;
+      border: 1px solid black;
+      /* box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); */
+      /* margin: 3em auto; */
+    }
+
+    .card.dark {
+      color: #fff;
+    }
+
+    .card.card.bg-light-subtle .card-title {
+      color: dimgrey;
+    }
+
+    .card img {
+      max-width: 25%;
+      margin: auto;
+      padding: 0.5em;
+      border-radius: 0.7em;
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .text-section {
+      max-width: 60%;
+    }
+
+    .cta-section {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: 220px;
+    }
+
+    .cta-section .btn {
+      padding: 0.3em 0.5em;
+      /* color: #696969; */
+    }
+
+
+    .card.bg-light-subtle {
+      background-color: #898989;
+      border-color: #898989;
+    }
+
+
+    @media screen and (max-width: 475px) {
+      .card {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Favourite Spot
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="TamilNadu.html">TamilNadu</a></li>
+              <li><a class="dropdown-item" href="Karnataka.html">Karnataka</a></li>
+              <li><a class="dropdown-item" href="Andhra.html">Andhra Pradesh</a></li>
+              <li><a class="dropdown-item" href="Delhi.html">Delhi</a></li>
+              <li><a class="dropdown-item" href="Kerala.html">Kerala</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Booking Form.html">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Accomodation.html">Accomodation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Directions.html">Directions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="User.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+
+  <!-- 1 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/433681098.webp?k=3387326ce93d71b55e780ae2e002189aa2e4ee26216d9b783cdb4b8d4f624278&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">JW Marriott Goa
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Vagator</small>
+          <p class="card-text">JW Marriott Goa has an outdoor swimming pool, garden, a terrace and bar in Vagator. A hot
+            tub and a car rental service are available for guests. Central Location in Vagator, close to other hip
+            restaurants and
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9</span></h6>
+          <small>113 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 19,000 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 2 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/378287454.webp?k=bee9d1d5eebdfd1aec5d27ee210c11e65f8d59cda14cadbba1994d6c4df279b3&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Treebo Trend Majestic Palms 2 Km From Colva Beach 3 stars
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Benaulim</small>
+          <p class="card-text">Situated within 2.2 km of Colva Beach and 2.3 km of Sernabatim Beach, Treebo Trend
+            Majestic Palms 2 Km From Colva Beach features rooms in Benaulim. The bright and hospitable owner-manager
+            makes
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9.3</span></h6>
+          <small>128 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 3,445 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- 3 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/278129822.webp?k=649e82134f404d5afd70fe69cac363841db2383fb212df1506cb70041f9ce5f1&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Half Hotel, Calangute
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Vagator</small>
+          <p class="card-text">HALF Hotel, Calangute offers rooms in Calangute near Candolim Beach and Calangute Beach.
+            Featuring a garden, the 3-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom.
+            Had......
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9</span></h6>
+          <small>304 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 2,500 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 4 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/406132118.webp?k=5b28aac38d10f031d2a01bd0fa6d550a86dca822f482fd6b7b812b5f12274118&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Samyama Retreat
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Cola</small>
+          <p class="card-text">Set in Cola, 300 metres from Cola Beach, Samyama Retreat offers accommodation with a
+            garden, free private parking, a terrace and a restaurant. Staff was helpful and polite. Food in the
+            restaurant was....
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Exceptional<span class="badge rounded-pill text-bg-primary">9.5</span></h6>
+          <small>151 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 3,600 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 5 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/537792986.webp?k=a60d02f872e4a3b8a4bab88cb5d774fc3a22940245ed059094da3c64a211989f&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Cashew Leaf Resort
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Arambol</small>
+          <p class="card-text">Situated in Arambol, 13 km from Tiracol Fort, Cashew leaf resort features accommodation
+            with an outdoor swimming pool, free private parking, a garden and a restaurant.
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Exceptional<span class="badge rounded-pill text-bg-primary">10</span></h6>
+          <small>5 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 4,500 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 6 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/533882778.webp?k=8b75bba7afbfe55169765aac1a511479cbfd3d437846b7c9e5d49796744ef738&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Seawood Beach Front Resort
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Morjim Beach, Morjim</small>
+          <p class="card-text">Located in Morjim, a few steps from Morjim Beach, Seawood beach front resort provides
+            accommodation with an outdoor swimming pool, free private parking, a garden and a restaurant. Clean
+            rooms....
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Exceptional<span class="badge rounded-pill text-bg-primary">10</span></h6>
+          <small>5 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 4,320 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 7 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/532063606.webp?k=389fab9634b8c3377885a3349c1e59c580b62c037355e450cbf2d954732e45df&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Baga Treasures
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Goa</small>
+          <p class="card-text">Located in Goa, 400 metres from Baga Beach, Baga Treasures provides accommodation with
+            free WiFi and free private parking. stay was good with helpful staff💯👍
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9</span></h6>
+          <small>11 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 4,000 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 8 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/536963419.webp?k=ebc5d4d3020d42c6c13272d7ddce721ba892c99916c35ca802c7251087d00fd0&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Shivam Hotel & Resort - Best Selling Property near to Beach Goa
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Goa</small>
+          <p class="card-text">Set in Goa, 1.8 km from Calangute Beach, Shivam Hotel & Resort - Best Selling Property
+            near to Beach Goa offers accommodation with a garden, free private parking, a terrace and a restaurant.
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 / style="margin-top: 30px;">Exceptional<span class="badge rounded-pill text-bg-primary">9.8</span></h6>
+          <small>11 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 1,999 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- 9 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/532341034.webp?k=8858235a227ca6db8a056b7d4ee1a609a5a8ebd229b59d91513f7d9818b7c867&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Eutopia Beach Resort - Boutique Resort with Pool by Rio Hotels India
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i> Hotel in Morjim</small>
+          <p class="card-text">Set in Morjim, within 1.3 km of Morjim Beach and 1.6 km of Ashwem Beach, Eutopia Beach
+            Resort - Boutique Resort with Pool by Rio Hotels India offers accommodation with a garden and free
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Exceptional<span class="badge rounded-pill text-bg-primary">9.7</span></h6>
+          <small>6 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 5,000 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+  <!-- 10 -->
+  <div class="container">
+    <div class="card bg-light-subtle ms-5">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/square200/432443391.webp?k=6979019a617497a58f9ce0368da9f26c92166b4f38e52554e9826b8c55e515ba&o="
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-section">
+          <h5 class="card-title fw-bold">Blue Door
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </h5>
+          <small class="text-secondary"><i class="fa fa-map-marker"></i>Hotel in Morjim Beach, Morjim</small>
+          <p class="card-text">Blue Door is located in Morjim, 700 metres from Morjim Beach and 13 km from Chapora Fort.
+            With a bar, the 3-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. Really
+            good roo
+          <p><a href="#" class="link-underline-primary">Read More</a></p>
+          </p>
+          <h6 style="margin-top: 30px;">Superb<span class="badge rounded-pill text-bg-primary">9</span></h6>
+          <small>250 reviews</small>
+        </div>
+        <div class="cta-section">
+          <div class="text-success fs-4 fw-bold">&#8377; 1,799 per night</div>
+          <a href="#" class="btn btn-primary" onclick="button()">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Footer -->
+  <div class="footer bg-dark text-light p-5">
+    <table class="container">
+      <thead>
+        <tr>
+          <td>Andhra Pradesh</td>
+          <td>Gujarat</td>
+          <td>Karnataka</td>
+          <td>Punjab</td>
+        </tr>
+
+        <tr>
+          <td>Tamil Nadu</td>
+          <td>Himachal Pradesh</td>
+          <td>Arunachal Pradesh</td>
+          <td>Kerala</td>
+        </tr>
+
+        <tr>
+          <td>Delhi</td>
+          <td>Kerala</td>
+          <td>Jammu Kashmir</td>
+          <td>Ladakh</td>
+        </tr>
+
+        <tr>
+          <td>Puducherry</td>
+          <td>Assam</td>
+          <td>Goa</td>
+          <td>Ooty</td>
+        </tr>
+      </thead>
+    </table>
+    <br>
+    <div style="justify-content: space-evenly;" class="text-center">
+      <p>Follow Us</p>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-youtube"></i>
+    </div><br>
+
+    <div class="text-center bg-secondary p-2 end-0" style="margin-bottom: -50px;">
+      <p>@2024 Our Company</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function button() {
+      alert('Not Available Now, Try Again Later')
+    }
+  </script>
+</body>
+
+</html>

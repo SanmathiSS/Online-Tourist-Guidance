@@ -1,0 +1,200 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Booking Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Package Booking Form</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Arrival Date</label>
+                <input type="date" class="form-control" id="checkin" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout">Depature Date</label>
+                <input type="date" class="form-control" id="checkout" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of People</label>
+                <input type="number" class="form-control" id="guests" placeholder="Enter number of guests" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Simple validation example
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let checkin = document.getElementById('checkin').value;
+            let checkout = document.getElementById('checkout').value;
+            let guests = document.getElementById('guests').value;
+
+            if (name === '' || email === '' || phone === '' || checkin === '' || checkout === '' || guests === '') {
+                alert('Please fill out all fields.');
+            } else {
+                alert('Your Tour Package is Booking successfully!');
+                window.location.href ="Booking Form.html"; // Optional: redirect to homepage
+                // Here you would typically handle form submission, e.g., send data to a server
+            }
+        });
+
+    </script>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Package Booking Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Tour Package Booking Form</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="package">Select Package:</label>
+                <select class="form-control" id="package" required>
+                    <option value="" disabled selected>Select a package</option>
+                    <option value="package1">Chennai, Tirupati</option>
+                    <option value="package2">Madurai, Kodaikanal</option>
+                    <option value="package3">Cochin, Munnar, Thekkady</option>
+                    <option value="package4">Cochin, Alleppey, Kumarakom</option>
+                    <option value="package5">Calicut, Wayanad</option>
+                    <option value="package6">Hyderabad</option>
+                    <option value="package7">Vizag, Araku</option>
+                    <option value="package8">Bangalore, Coorg</option>
+                    <option value="package9">Madurai, Rameshwaram, Kanyakumari, Thiruvandrum</option>
+                    <option value="package10">Madurai, Kodaikanal, Rameshwaram, Kanyakumari, Thiruvandrum</option>
+                    <option value="package11">Cochin, Munnar, Thekkady</option>
+                    <option value="package12">Alleppey, Kerala, India</option>
+                    <option value="package13">Kerala, Cochin, India</option>
+                    <option value="package14">Bangalore, Mysore, Coorg</option>
+                    <option value="package15">Ladakh</option>
+                    <option value="package16">Port Blair, Excursion Ross, North Bay (Coral Island), Viper Island, Havelock</option>
+                    <option value="package17">Pune, Mahabaleshwar</option>
+                    <option value="package18">Delhi, Haridwar, Rishikesh</option>
+                    <option value="package19">Pondicherry</option>
+                    <option value="package20">Delhi, Agra</option>
+                    <option value="package21">Goa</option>
+                    <option value="package22">Mangalore, Goa</option>
+                    <option value="package23">Ooty, Wayanad</option>
+                    <option value="package24">Nainital, India</option>
+                    <option value="package25">Delhi, Carbett, Nainital</option>
+                    <option value="package26">Ayodhya, Kashi</option>
+                    <option value="package27">Delhi, Shimla, Manalai, Chandigarh</option>
+                    <option value="package28">Port Blair, Havelock</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date:</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const selectedPackage = document.getElementById('package').value;
+            const date = document.getElementById('date').value;
+
+            if (name && email && phone && selectedPackage && date) {
+                alert(`Thank you, ${name}! Your booking for ${selectedPackage} on ${date} has been confirmed.`);
+                document.getElementById('bookingForm').reset();
+            } else {
+                alert('Please fill out all fields.');
+                window.location.href ="Booking Form.html"; 
+            }
+        });
+
+    </script>
+</body>
+
+</html>
